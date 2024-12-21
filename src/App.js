@@ -30,6 +30,9 @@ import LabReportsSystem from "./pages/LabReportsSystem";
 import UserRegistrationForm from "./pages/UserRegistrationForm";
 import LoginPage from "./pages/LoginPage";
 import UserGuide from "./pages/UserGuide";
+import Dashboard from "./pages/Dashboard";
+
+
 function App() {
   return (
     <Router>
@@ -38,6 +41,7 @@ function App() {
         <Route path="/register" element={<UserRegistrationForm />} />
         <Route path="/Login" element={<LoginPage />} />
         <Route path="/user-guide" element={<UserGuide />} />
+        <Route path="/homepage" element={<Dashboard />} />
       </Routes>
     </Router>
   );
