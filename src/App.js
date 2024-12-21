@@ -29,7 +29,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LabReportsSystem from "./pages/LabReportsSystem";
 import UserRegistrationForm from "./pages/UserRegistrationForm";
 import LoginPage from "./pages/LoginPage";
-
+import UserGuide from "./pages/UserGuide";
 function App() {
   return (
     <Router>
@@ -37,6 +37,7 @@ function App() {
         <Route path="/" element={<LabReportsSystem />} />
         <Route path="/register" element={<UserRegistrationForm />} />
         <Route path="/Login" element={<LoginPage />} />
+        <Route path="/user-guide" element={<UserGuide />} />
       </Routes>
     </Router>
   );

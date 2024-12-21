@@ -123,7 +123,11 @@ export default function LabReportsSystem() {
           />
         </div>
         <nav className="flex gap-10 my-auto text-xs font-black tracking-wide text-white max-md:max-w-full">
-          <NavButton>{navButtons[0]}</NavButton>
+          <Link to="/user-guide">
+            <button className="overflow-hidden gap-3 self-start px-5 py-3 text-white bg-blue-900 rounded-md">
+              دليل المستخدم
+            </button>
+          </Link>
           <div className="flex flex-auto gap-3">
             <NavButton>{navButtons[1]}</NavButton>
             <Link to="/login">
